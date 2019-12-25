@@ -24,23 +24,39 @@
 </div>
 
 <script>
-import { onMount } from 'svelte';
+import { onMount, beforeUpdate } from 'svelte';
 
-import ReleaseColors from '../utils/release-colors';
+import getReleaseColors from '../utils/release-colors';
 
 export let release;
 let backgroundColor = '';
 let color = '';
 let titleColor = '';
+let mounted = false;
+
 $: hasColors = !!(backgroundColor && color && titleColor)
+$: updateColors(release)
+
+const setColors = async (release) => {
+  if (!release) {
+    return;
+  }
+  const colors = await getReleaseColors(release.image);
+  const asRgb = colors.map(color => `rgb(${color})`);
+  color = asRgb[2];
+  titleColor = asRgb[1];
+  backgroundColor = asRgb[0];
+}
+
+const updateColors = (release) => {
+  if (mounted) {
+    setColors(release);
+  }
+};
 
 onMount(() => {
-  new ReleaseColors(release.image).getColors(colors => {
-    const asRgb = colors.map(color => `rgb(${color})`);
-    color = asRgb[2];
-    titleColor = asRgb[1];
-    backgroundColor = asRgb[0];
-  });
+  mounted = true;
+  setColors(release);
 });
 </script>
 
@@ -63,6 +79,6 @@ onMount(() => {
 
 .release-artwork {
   background-size: contain;
-  animation: fade-scale 1s 1s ease-in-out both;
+  animation: fade-scale 1s .5s ease-in-out both;
 }
 </style>
