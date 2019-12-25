@@ -53,7 +53,7 @@ const fetchSuggestions = async (query) => {
 const onFocus = () => focused = true;
 
 const onBlur = ({ relatedTarget }) => {
-  const delay = relatedTarget && form && form.contains(relatedTarget) ? 150 : 0;
+  const delay = relatedTarget && form && form.contains(relatedTarget) ? 200 : 0;
   setTimeout(() => focused = false, delay)
 }
 const onKeyup = ({ target: { value }}) => {
