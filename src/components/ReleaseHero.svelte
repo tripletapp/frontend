@@ -61,7 +61,7 @@ onMount(() => {
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
-.release-hero-title {
+.release-hero-text {
   transition: color 1s ease-in-out;
 }
 

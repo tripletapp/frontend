@@ -16,8 +16,8 @@ export let releases = [];
 
 <div class="container pt-12">
   <h1 class="sr-only">Releases</h1>
+  {#if releases.length > 0}
   <ul>
-    {#if releases.length > 0}
     {#each releases as release}
     <li>
       <a rel="prefetch" href="/releases/{release.slug}">
@@ -25,6 +25,6 @@ export let releases = [];
       </a>
     </li>
     {/each}
-    {/if}
   </ul>
+  {/if}
 </div>
