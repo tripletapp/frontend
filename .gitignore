@@ -102,3 +102,15 @@ dist
 
 # TernJS port file
 .tern-port
+
+# MacOS
+.DS_Store
+
+# Svelte
+/src/node_modules/@sapper/
+
+# Cypress
+/cypress/screenshots/
+
+# Sapper
+/__sapper__/
