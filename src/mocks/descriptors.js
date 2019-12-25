@@ -6,6 +6,7 @@ export default [{
     id: '123',
     slug: 'deafheaven-sunbather',
     title: 'Sunbather',
+    artist: 'Deafheaven',
     year: 2008,
     image: 'http://localhost:3000/deafheaven-sunbather.jpg'
   }, {
@@ -39,5 +40,17 @@ export default [{
     artist: 'Deafheaven',
     year: 2008,
     image: 'http://localhost:3000/deafheaven-sunbather.jpg'
+  }]
+}, {
+  id: '101112',
+  slug: 'atmospheric',
+  name: 'Atmospheric',
+  releases: [{
+    id: '789',
+    slug: 'tim-hecker-anoyo',
+    title: 'Anoyo',
+    artist: 'Tim Hecker',
+    year: 2019,
+    image: 'http://localhost:3000/tim-hecker-anoyo.jpg'
   }]
 }]

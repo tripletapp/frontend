@@ -38,4 +38,24 @@ export default [{
     slug: 'aggressive',
     name: 'Aggressive'
   }]
+}, {
+  id: '789',
+  slug: 'tim-hecker-anoyo',
+  title: 'Anoyo',
+  artist: 'Tim Hecker',
+  year: 2019,
+  image: 'http://localhost:3000/tim-hecker-anoyo.jpg',
+  descriptors: [{
+    id: '1',
+    slug: 'spacey',
+    name: 'Spacey'
+  }, {
+    id: '2',
+    slug: 'reflective',
+    name: 'Reflective'
+  }, {
+    id: '3',
+    slug: 'atmospheric',
+    name: 'Atmospheric'
+  }]
 }]

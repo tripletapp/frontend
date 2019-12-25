@@ -14,5 +14,5 @@ const dev = process.env.NODE_ENV === 'development';
   <p>{error.message}</p>
   {#if dev && error.stack}
     <pre>{error.stack}</pre>
-{/if}
+  {/if}
 </div>
