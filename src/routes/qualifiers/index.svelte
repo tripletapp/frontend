@@ -2,7 +2,7 @@
 export let qualifiers = ['aggressive', 'mesmerising']
 </script>
 
-<div class="container pt-12">
+<div class="container pt-16">
   <h1 class="sr-only">Qualifiers</h1>
   {#if qualifiers.length > 0}
   <ul>

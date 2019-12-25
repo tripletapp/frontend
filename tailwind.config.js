@@ -2,16 +2,18 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      navbar: '#2d3748cc',
+      navbar: '#2d374866'
     }),
     backgroundSize: {
-      '125': '125%',
+      125: '125%'
     },
     container: {
-      center: true,
+      center: true
     },
-    extend: {},
+    extend: {}
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('tailwindcss-transitions')()
+  ]
 }

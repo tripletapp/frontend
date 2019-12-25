@@ -1,14 +1,14 @@
 <div
-  class="relative w-screen h-screen bg-gray-900 text-white flex items-center release-hero"
+  class="relative w-screen h-screen bg-gray-900 text-white flex items-center transition-colors transition-1000"
   style="color: {color}; background-color: {backgroundColor}"
 >
   {#if hasColors}
   <div
-    class="absolute top-0 left-0 bottom-0 right-0 z-0 opacity-50 release-artwork"
-    style="background: url({release.image}) no-repeat center"
+    class="absolute top-0 left-0 bottom-0 right-0 z-0 opacity-50 bg-no-repeat bg-center release-artwork"
+    style="background-image: url({release.image})"
   />
   {/if}
-  <div class="container relative pt-12">
+  <div class="container relative pt-16">
     <div class="text-center font-thin">
       <h1 class="text-5xl release-hero-text" style="color: {titleColor}">
         {release.title}
@@ -55,10 +55,6 @@ onMount(() => {
     transform: scale(1);
     opacity: .5;
   }
-}
-
-.release-hero {
-  transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .release-hero-text {

@@ -2,6 +2,6 @@
 	<title>Home</title>
 </svelte:head>
 
-<div class="container pt-12">
+<div class="container pt-16">
   Home.
 </div>

@@ -27,9 +27,9 @@ export let release;
 
 <ReleaseHero release={release}>
   <div class="flex justify-center text-xl py-10">
-    {#each release.qualifiers as qualifier}
+    {#each release.qualifiers as qualifier, index}
     <div class="ml-2">
-      <Qualifier qualifier={qualifier} />
+      <Qualifier qualifier={qualifier} number={index + 1} />
     </div>
     {/each}
   </div>

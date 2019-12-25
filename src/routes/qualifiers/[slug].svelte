@@ -13,6 +13,6 @@ export let qualifier;
 	<title>{qualifier} - Qualifiers</title>
 </svelte:head>
 
-<div class="container pt-12">
+<div class="container pt-16">
   <p>{qualifier}</p>
 </div>

@@ -14,7 +14,7 @@ export let releases = [];
 	<title>Releases</title>
 </svelte:head>
 
-<div class="container pt-12">
+<div class="container pt-16">
   <h1 class="sr-only">Releases</h1>
   {#if releases.length > 0}
   <ul>
