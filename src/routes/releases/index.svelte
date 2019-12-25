@@ -1,20 +1,8 @@
-<script context="module">
-export async function preload({ params, query }) {
-  const response = await this.fetch('/releases.json');
-  const releases = await response.json();
-  return { releases };
-}
-</script>
-
-<script>
-export let releases = [];
-</script>
-
 <svelte:head>
 	<title>Releases</title>
 </svelte:head>
 
-<div class="container pt-16">
+<div class="container pt-20">
   <h1 class="sr-only">Releases</h1>
   {#if releases.length > 0}
   <ul>
@@ -28,3 +16,15 @@ export let releases = [];
   </ul>
   {/if}
 </div>
+
+<script context="module">
+export async function preload({ params, query }) {
+  const response = await this.fetch('/releases.json');
+  const releases = await response.json();
+  return { releases };
+}
+</script>
+
+<script>
+export let releases = [];
+</script>

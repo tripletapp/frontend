@@ -11,8 +11,8 @@
         <a rel=prefetch class="px-4 py-3" class:font-bold="{segment === 'releases'}" href="/releases">
           Releases
         </a>
-        <a rel=prefetch class="px-4 py-3" class:font-bold="{segment === 'qualifiers'}" href="/qualifiers">
-          Qualifiers
+        <a rel=prefetch class="px-4 py-3" class:font-bold="{segment === 'descriptors'}" href="/descriptors">
+          Descriptors
         </a>
       </div>
       <form onsubmit="return false;">

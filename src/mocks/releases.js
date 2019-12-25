@@ -5,7 +5,19 @@ export default [{
   artist: 'Deafheaven',
   year: 2008,
   image: 'http://localhost:3000/deafheaven-sunbather.jpg',
-  qualifiers: ['aggressive', 'mesmerising', 'otherwordly']
+  descriptors: [{
+    id: '1',
+    slug: 'aggressive',
+    name: 'Aggressive'
+  }, {
+    id: '2',
+    slug: 'mesmerising',
+    name: 'Mesmerising'
+  }, {
+    id: '3',
+    slug: 'otherwordly',
+    name: 'Otherwordly'
+  }]
 }, {
   id: '456',
   slug: 'no-one-knows-what-the-dead-think-no-one-knows-what-the-dead-think',
@@ -13,5 +25,17 @@ export default [{
   artist: 'No One Knows What The Dead Think',
   year: 2019,
   image: 'http://localhost:3000/no-one-knows-what-the-dead-think-no-one-knows-what-the-dead-think.jpg',
-  qualifiers: ['caustic', 'brutal', 'relentless']
+  descriptors: [{
+    id: '1',
+    slug: 'caustic',
+    name: 'Caustic'
+  }, {
+    id: '2',
+    slug: 'brutal',
+    name: 'Brutal'
+  }, {
+    id: '3',
+    slug: 'aggressive',
+    name: 'Aggressive'
+  }]
 }]

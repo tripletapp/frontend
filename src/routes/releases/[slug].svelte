@@ -1,3 +1,17 @@
+<svelte:head>
+	<title>{release.artist} - {release.title}</title>
+</svelte:head>
+
+<ReleaseHero release={release}>
+  <div class="flex justify-center text-xl py-10">
+    {#each release.descriptors as descriptor, index}
+    <div class="ml-2">
+      <Descriptor descriptor={descriptor} number={index + 1} />
+    </div>
+    {/each}
+  </div>
+</ReleaseHero>
+
 <script context="module">
 export async function preload({ params, query }) {
   try {
@@ -6,7 +20,7 @@ export async function preload({ params, query }) {
     if (response.ok) {
       return { release: data };
     } else {
-      this.error(res.status, data.message);
+      this.error(response.status, data.message);
     }
   } catch (err) {
     this.error(500, 'Damn, we went off-beat! The release could not be loaded.');
@@ -16,21 +30,7 @@ export async function preload({ params, query }) {
 
 <script>
 import ReleaseHero from '../../components/ReleaseHero.svelte';
-import Qualifier from '../../components/Qualifier.svelte';
+import Descriptor from '../../components/Descriptor.svelte';
 
 export let release;
 </script>
-
-<svelte:head>
-	<title>{release.artist} - {release.title}</title>
-</svelte:head>
-
-<ReleaseHero release={release}>
-  <div class="flex justify-center text-xl py-10">
-    {#each release.qualifiers as qualifier, index}
-    <div class="ml-2">
-      <Qualifier qualifier={qualifier} number={index + 1} />
-    </div>
-    {/each}
-  </div>
-</ReleaseHero>
