@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      navbar: '#2d374866'
+      'gray-800-transparent': '#2d374866'
     }),
     backgroundSize: {
       125: '125%'

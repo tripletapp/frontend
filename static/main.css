@@ -1069,7 +1069,7 @@ video {
   background-color: #702459;
 }
 
-.bg-navbar {
+.bg-gray-800-transparent {
   background-color: #2d374866;
 }
 
@@ -1445,7 +1445,7 @@ video {
   background-color: #702459;
 }
 
-.hover\:bg-navbar:hover {
+.hover\:bg-gray-800-transparent:hover {
   background-color: #2d374866;
 }
 
@@ -1821,7 +1821,7 @@ video {
   background-color: #702459;
 }
 
-.focus\:bg-navbar:focus {
+.focus\:bg-gray-800-transparent:focus {
   background-color: #2d374866;
 }
 
@@ -12045,7 +12045,7 @@ video {
     background-color: #702459;
   }
 
-  .sm\:bg-navbar {
+  .sm\:bg-gray-800-transparent {
     background-color: #2d374866;
   }
 
@@ -12421,7 +12421,7 @@ video {
     background-color: #702459;
   }
 
-  .sm\:hover\:bg-navbar:hover {
+  .sm\:hover\:bg-gray-800-transparent:hover {
     background-color: #2d374866;
   }
 
@@ -12797,7 +12797,7 @@ video {
     background-color: #702459;
   }
 
-  .sm\:focus\:bg-navbar:focus {
+  .sm\:focus\:bg-gray-800-transparent:focus {
     background-color: #2d374866;
   }
 
@@ -23022,7 +23022,7 @@ video {
     background-color: #702459;
   }
 
-  .md\:bg-navbar {
+  .md\:bg-gray-800-transparent {
     background-color: #2d374866;
   }
 
@@ -23398,7 +23398,7 @@ video {
     background-color: #702459;
   }
 
-  .md\:hover\:bg-navbar:hover {
+  .md\:hover\:bg-gray-800-transparent:hover {
     background-color: #2d374866;
   }
 
@@ -23774,7 +23774,7 @@ video {
     background-color: #702459;
   }
 
-  .md\:focus\:bg-navbar:focus {
+  .md\:focus\:bg-gray-800-transparent:focus {
     background-color: #2d374866;
   }
 
@@ -33999,7 +33999,7 @@ video {
     background-color: #702459;
   }
 
-  .lg\:bg-navbar {
+  .lg\:bg-gray-800-transparent {
     background-color: #2d374866;
   }
 
@@ -34375,7 +34375,7 @@ video {
     background-color: #702459;
   }
 
-  .lg\:hover\:bg-navbar:hover {
+  .lg\:hover\:bg-gray-800-transparent:hover {
     background-color: #2d374866;
   }
 
@@ -34751,7 +34751,7 @@ video {
     background-color: #702459;
   }
 
-  .lg\:focus\:bg-navbar:focus {
+  .lg\:focus\:bg-gray-800-transparent:focus {
     background-color: #2d374866;
   }
 
@@ -44976,7 +44976,7 @@ video {
     background-color: #702459;
   }
 
-  .xl\:bg-navbar {
+  .xl\:bg-gray-800-transparent {
     background-color: #2d374866;
   }
 
@@ -45352,7 +45352,7 @@ video {
     background-color: #702459;
   }
 
-  .xl\:hover\:bg-navbar:hover {
+  .xl\:hover\:bg-gray-800-transparent:hover {
     background-color: #2d374866;
   }
 
@@ -45728,7 +45728,7 @@ video {
     background-color: #702459;
   }
 
-  .xl\:focus\:bg-navbar:focus {
+  .xl\:focus\:bg-gray-800-transparent:focus {
     background-color: #2d374866;
   }
 
