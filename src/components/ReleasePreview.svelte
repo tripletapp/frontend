@@ -1,6 +1,5 @@
 <SquareLink
   href="/releases/{release.slug}"
-  class={className}
   backgroundImage={release.image}
   backgroundImageAlt="Arwork for {release.artist} - {release.title}"
 >
@@ -13,5 +12,4 @@ import SquareLink from './SquareLink.svelte';
 
 let className;
 export let release;
-export { className as class };
 </script>

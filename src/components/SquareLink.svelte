@@ -1,7 +1,7 @@
 <a
   rel="prefetch"
   href={href}
-  class="relative flex items-center justify-center overflow-hidden bg-gray-900 hover:bg-gray-800 transition-bg transition-ease-in-out square-link {className}"
+  class="relative flex w-full h-full items-center justify-center overflow-hidden bg-gray-900 transition-bg transition-ease-in-out square-link"
 >
   {#if backgroundImage}
   <img
@@ -25,13 +25,12 @@ export let href = '';
 export let backgroundImage = '';
 export let backgroundImageAlt = '';
 export let animate = true;
-export { className as class };
 </script>
 
 <style>
 .square-link:hover .square-link-background-image,
 .square-link:focus .square-link-background-image {
-  opacity: .75;
+  opacity: .5;
 }
 
 .square-link:hover .square-link-text,

@@ -8,6 +8,5 @@
 </a>
 
 <script>
-export let number;
 export let descriptor;
 </script>

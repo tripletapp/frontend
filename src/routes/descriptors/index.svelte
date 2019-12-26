@@ -2,25 +2,26 @@
 	<title>Descriptors</title>
 </svelte:head>
 
-<div class="container pt-16">
-  <h1 class="text-2xl">Descriptors</h1>
+<div class="pt-16">
+  <h1 class="sr-only">Descriptors</h1>
   {#if descriptors.length > 0}
   {#each descriptors as descriptor}
-  <div>
-    <h2 class="text-3xl mb-2">
-      {descriptor.name}
-    </h2>
-    <div class="flex">
+  <div class="pb-4 last-child:pb-0">
+    <h2 class="container text-2xl mb-2">{descriptor.name}</h2>
+    <div class="flex flex-wrap">
       {#each descriptor.releases.slice(0, 4) as release}
-      <ReleasePreview release={release} class="w-48 h-48" />
+      <div class="descriptor-release">
+        <ReleasePreview release={release} />
+      </div>
       {/each}
-      <SquareLink
-        href="/descriptors/{descriptor.slug}"
-        class="w-48 h-48"
-        animate={false}
-      >
-        See all <strong>{descriptor.releases.length}</strong> release{#if descriptor.releases.length > 1}s{/if}
-      </SquareLink>
+      <div class="descriptor-release">
+        <SquareLink
+          href="/descriptors/{descriptor.slug}"
+          animate={false}
+        >
+          See all <strong>{descriptor.releases.length}</strong> release{#if descriptor.releases.length > 1}s{/if}
+        </SquareLink>
+      </div>
     </div>
   </div>
   {/each}
@@ -41,3 +42,10 @@ import SquareLink from '../../components/SquareLink.svelte'
 
 export let descriptors = [];
 </script>
+
+<style>
+.descriptor-release {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+</style>

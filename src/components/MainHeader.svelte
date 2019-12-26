@@ -8,16 +8,16 @@
   <div class="container">
     <div class="flex justify-between -mx-4 items-center">
       <nav class="flex items-center">
-        <a class="px-4 py-4 font-bold" href="/">
+        <a class="px-4 py-5 font-bold" href="/">
           <BrandText />
         </a>
-        <a rel=prefetch class="px-4 py-4" class:font-medium="{segment === 'descriptors'}" href="/descriptors">
+        <a rel=prefetch class="px-4 py-5" class:font-medium="{segment === 'descriptors'}" href="/descriptors">
           Descriptors
         </a>
-        <a rel=prefetch class="px-4 py-4" class:font-medium="{segment === 'releases'}" href="/releases">
+        <a rel=prefetch class="px-4 py-5" class:font-medium="{segment === 'releases'}" href="/releases">
           Releases
         </a>
-        <a rel=prefetch class="px-4 py-4" class:font-medium="{segment === 'charts'}" href="/charts">
+        <a rel=prefetch class="px-4 py-5" class:font-medium="{segment === 'charts'}" href="/charts">
           Charts
         </a>
       </nav>

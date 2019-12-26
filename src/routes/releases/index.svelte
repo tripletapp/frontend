@@ -2,12 +2,14 @@
 	<title>Releases</title>
 </svelte:head>
 
-<div class="container pt-16">
-  <h1 class="text-2xl mb-2">Releases</h1>
+<div class="pt-16">
+  <h1 class="sr-only">Releases</h1>
   {#if releases.length > 0}
-  <div class="flex">
+  <div class="flex flex-wrap">
     {#each releases as release}
-    <ReleasePreview release={release} class="w-64 h-64" />
+    <div class="releases-release">
+      <ReleasePreview release={release} />
+    </div>
     {/each}
   </div>
   {/if}
@@ -26,3 +28,10 @@ import ReleasePreview from '../../components/ReleasePreview.svelte';
 
 export let releases = [];
 </script>
+
+<style>
+.releases-release {
+  width: 12.5vw;
+  height: 12.5vw;
+}
+</style>

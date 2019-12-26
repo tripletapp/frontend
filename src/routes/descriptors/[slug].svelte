@@ -2,12 +2,14 @@
 	<title>{descriptor.name} - Descriptors</title>
 </svelte:head>
 
-<div class="container pt-16">
-  <h1 class="text-2xl mb-2">{descriptor.name}</h1>
+<div class="pt-16">
+  <h1 class="container text-2xl mb-2">{descriptor.name}</h1>
   {#if descriptor.releases.length > 0}
-  <div class="flex">
+  <div class="flex flex-wrap">
     {#each descriptor.releases as release}
-    <ReleasePreview release={release} class="w-64 h-64" />
+    <div class="descriptor-release">
+      <ReleasePreview release={release} />
+    </div>
     {/each}
   </div>
   {/if}
@@ -36,3 +38,10 @@ import ReleasePreview from '../../components/ReleasePreview.svelte';
 export let descriptor;
 let dim;
 </script>
+
+<style>
+.descriptor-release {
+  width: 20vw;
+  height: 20vw;
+}
+</style>

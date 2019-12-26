@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     backgroundColor: theme => ({
       ...theme('colors'),
-      'gray-900-transparent': '#1a202c66'
+      'gray-900-transparent': '#1a202caa'
     }),
     backgroundSize: {
       125: '125%'
