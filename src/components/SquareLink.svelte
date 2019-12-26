@@ -1,7 +1,7 @@
 <a
   rel="prefetch"
   href={href}
-  class="relative flex items-center justify-center overflow-hidden bg-gray-900 square-link {className}"
+  class="relative flex items-center justify-center overflow-hidden bg-gray-900 hover:bg-gray-800 transition-bg transition-ease-in-out square-link {className}"
 >
   {#if backgroundImage}
   <img
