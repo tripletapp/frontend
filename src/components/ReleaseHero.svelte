@@ -8,7 +8,7 @@
     style="background-image: url({release.image})"
   />
   {/if}
-  <div class="container relative pt-16">
+  <div class="container relative">
     <div class="text-center font-thin">
       <h1 class="text-5xl release-hero-text" style="color: {titleColor}">
         {release.title}

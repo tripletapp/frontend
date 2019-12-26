@@ -3,7 +3,7 @@
 </svelte:head>
 
 <ReleaseHero release={release}>
-  <div class="flex justify-center text-xl py-10">
+  <div class="flex justify-center text-xl pt-10">
     {#each release.descriptors as descriptor, index}
     <div class="mr-2 last:mr-0">
       <DescriptorTag descriptor={descriptor} number={index + 1} />
