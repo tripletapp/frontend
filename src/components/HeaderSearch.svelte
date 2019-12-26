@@ -46,7 +46,7 @@ const fetchSuggestions = async (query) => {
     return;
   }
   try {
-    const response = await fetch(`/suggestions.json?query=${query}`);
+    const response = await fetch(`/suggestions.json?query=${query}&limit=5`);
     suggestions = await response.json();
   } catch(err) {
     //
