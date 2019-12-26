@@ -5,11 +5,11 @@
   on:submit|preventDefault={onSubmit}
 >
   <div class="flex items-center relative">
-    <label class="sr-only" for="username">
-      Username
+    <label class="sr-only" for="query">
+      Query
     </label>
     <input
-      id="username"
+      id="query"
       type="search"
       value={query}
       placeholder="Type to search…"
