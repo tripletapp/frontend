@@ -1,5 +1,5 @@
 <div
-  class="relative w-screen h-screen bg-gray-900 text-white flex items-center transition-colors transition-1000"
+  class="relative w-screen h-screen flex items-center transition-colors transition-1000"
   style="color: {color}; background-color: {backgroundColor}"
 >
   {#if hasColors}

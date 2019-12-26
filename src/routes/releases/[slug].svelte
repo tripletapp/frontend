@@ -6,7 +6,7 @@
   <div class="flex justify-center text-xl py-10">
     {#each release.descriptors as descriptor, index}
     <div class="ml-2">
-      <Descriptor descriptor={descriptor} number={index + 1} />
+      <DescriptorTag descriptor={descriptor} number={index + 1} />
     </div>
     {/each}
   </div>
@@ -30,7 +30,7 @@ export async function preload({ params, query }) {
 
 <script>
 import ReleaseHero from '../../components/ReleaseHero.svelte';
-import Descriptor from '../../components/Descriptor.svelte';
+import DescriptorTag from '../../components/DescriptorTag.svelte';
 
 export let release;
 </script>
