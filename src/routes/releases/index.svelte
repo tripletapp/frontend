@@ -3,17 +3,13 @@
 </svelte:head>
 
 <div class="container pt-20">
-  <h1 class="sr-only">Releases</h1>
+  <h1 class="text-2xl mb-1">Releases</h1>
   {#if releases.length > 0}
-  <ul>
+  <div class="flex">
     {#each releases as release}
-    <li>
-      <a rel="prefetch" href="/releases/{release.slug}">
-        {release.artist} - {release.title}
-      </a>
-    </li>
+    <ReleasePreview release={release} class="w-48 h-48" />
     {/each}
-  </ul>
+  </div>
   {/if}
 </div>
 
@@ -26,5 +22,7 @@ export async function preload({ params, query }) {
 </script>
 
 <script>
+import ReleasePreview from '../../components/ReleasePreview.svelte';
+
 export let releases = [];
 </script>
