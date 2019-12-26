@@ -1,7 +1,6 @@
 <div
   class="relative w-screen h-screen flex items-center transition-colors transition-1000"
   style="color: {color}; background-color: {backgroundColor}"
-  out:fade={{ duration: 250 }}
 >
   {#if hasColors}
   <div
@@ -26,7 +25,6 @@
 
 <script>
 import { onMount, beforeUpdate } from 'svelte';
-import { fade } from 'svelte/transition';
 
 import getReleaseColors from '../utils/release-colors';
 

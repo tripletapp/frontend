@@ -12,6 +12,3 @@ import MainFooter from '../components/MainFooter.svelte';
 
 export let segment;
 </script>
-
-<style>
-</style>

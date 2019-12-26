@@ -2,15 +2,17 @@
 	<title>{release.artist} - {release.title}</title>
 </svelte:head>
 
-<ReleaseHero release={release}>
-  <div class="flex justify-center text-xl pt-10">
-    {#each release.descriptors as descriptor, index}
-    <div class="mr-2 last:mr-0">
-      <DescriptorTag descriptor={descriptor} number={index + 1} />
+<div>
+  <ReleaseHero release={release}>
+    <div class="flex justify-center text-xl pt-10">
+      {#each release.descriptors as descriptor, index}
+      <div class="mr-2 last:mr-0">
+        <DescriptorTag descriptor={descriptor} number={index + 1} />
+      </div>
+      {/each}
     </div>
-    {/each}
-  </div>
-</ReleaseHero>
+  </ReleaseHero>
+</div>
 
 <script context="module">
 export async function preload({ params, query }) {
