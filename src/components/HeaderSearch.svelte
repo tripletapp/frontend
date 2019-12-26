@@ -13,12 +13,12 @@
       type="search"
       value={query}
       placeholder="Type to search…"
-      class="appearance-none w-full py-2 px-4 bg-transparent placeholder-gray-300 leading-tight rounded focus:outline-none focus:border-b"
+      class="appearance-none w-full py-2 pr-10 bg-transparent placeholder-gray-300 leading-tight border-b border-transparent transition-border focus:outline-none focus:border-white"
       on:keyup={onKeyup}
       on:focus={onFocus}
       on:blur={onBlur}
     />
-    <button type="submit" class="absolute right-0 py-2 px-4">
+    <button type="submit" class="absolute right-0 p-2 -mr-1">
       <SearchIcon class="h-5 w-5" />
     </button>
   </div>
