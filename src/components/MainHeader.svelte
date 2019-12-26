@@ -1,4 +1,10 @@
-<header class="fixed top-0 left-0 w-full z-50 hover:bg-gray-900-transparent transition-bg transition-500 transition-ease-in-out">
+<svelte:window on:scroll={onScroll} />
+
+<header
+  class="fixed top-0 left-0 w-full z-50 transition-bg transition-ease-in-out"
+  class:hover:bg-gray-900-transparent={!scrolled}
+  class:bg-gray-900={scrolled}
+>
   <div class="container">
     <div class="flex justify-between -mx-4 items-center">
       <nav class="flex items-center">
@@ -21,4 +27,10 @@
 import HeaderSearch from './HeaderSearch.svelte';
 
 export let segment;
+let scrolled = false;
+
+const onScroll = () => {
+  const top = window.pageYOffset || document.documentElement.scrollTop
+  scrolled = top > 0;
+}
 </script>
