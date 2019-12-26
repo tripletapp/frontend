@@ -51,8 +51,8 @@ export default [{
     name: 'Spacey'
   }, {
     id: '2',
-    slug: 'reflective',
-    name: 'Reflective'
+    slug: 'meditative',
+    name: 'Meditative'
   }, {
     id: '3',
     slug: 'atmospheric',
