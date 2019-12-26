@@ -9,7 +9,7 @@
     <div class="flex justify-between -mx-4 items-center">
       <nav class="flex items-center">
         <a class="px-4 py-3 font-bold" href="/">
-          <span class="text-2xl" style="vertical-align: sub">&#9314;</span> Triplet
+          <BrandText />
         </a>
         <a rel=prefetch class="px-4 py-3" class:font-medium="{segment === 'releases'}" href="/releases">
           Releases
@@ -25,6 +25,7 @@
 
 <script>
 import HeaderSearch from './HeaderSearch.svelte';
+import BrandText from './BrandText.svelte';
 
 export let segment;
 let scrolled = false;

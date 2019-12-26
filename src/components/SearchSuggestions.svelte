@@ -9,6 +9,7 @@
         <a
           rel="prefetch"
           href="/{group.name.toLowerCase()}/{item.slug}"
+          on:click={onClick}
         >
           {item.name}
         </a>
@@ -23,5 +24,12 @@
 </div>
 
 <script>
+import { createEventDispatcher } from 'svelte';
+
 export let suggestions;
+
+const dispatch = createEventDispatcher();
+const onClick = () => {
+  dispatch('selected');
+}
 </script>
