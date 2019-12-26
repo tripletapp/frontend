@@ -2,12 +2,12 @@
 	<title>Releases</title>
 </svelte:head>
 
-<div class="container pt-20">
-  <h1 class="text-2xl mb-1">Releases</h1>
+<div class="container pt-16">
+  <h1 class="text-2xl mb-2">Releases</h1>
   {#if releases.length > 0}
   <div class="flex">
     {#each releases as release}
-    <ReleasePreview release={release} class="w-48 h-48" />
+    <ReleasePreview release={release} class="w-64 h-64" />
     {/each}
   </div>
   {/if}

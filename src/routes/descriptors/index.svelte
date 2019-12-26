@@ -2,7 +2,7 @@
 	<title>Descriptors</title>
 </svelte:head>
 
-<div class="container pt-20">
+<div class="container pt-16">
   <h1 class="text-2xl">Descriptors</h1>
   {#if descriptors.length > 0}
   {#each descriptors as descriptor}

@@ -2,8 +2,8 @@
 	<title>{descriptor.name} - Descriptors</title>
 </svelte:head>
 
-<div class="container pt-20">
-  <h1 class="text-3xl mb-4">{descriptor.name}</h1>
+<div class="container pt-16">
+  <h1 class="text-2xl mb-2">{descriptor.name}</h1>
   {#if descriptor.releases.length > 0}
   <div class="flex">
     {#each descriptor.releases as release}

@@ -9,7 +9,7 @@ const dev = process.env.NODE_ENV === 'development';
 	<title>{status}</title>
 </svelte:head>
 
-<div class="container pt-20">
+<div class="container pt-16">
   <h1>{status}</h1>
   <p>{error.message}</p>
   {#if dev && error.stack}
