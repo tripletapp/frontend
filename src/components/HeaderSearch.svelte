@@ -13,21 +13,23 @@
       type="search"
       value={query}
       placeholder="Type to search…"
-      class="appearance-none shadow border rounded-full w-full py-2 px-4 bg-transparent leading-tight focus:outline-none focus:shadow-outline"
+      class="appearance-none w-full py-2 px-4 bg-transparent placeholder-gray-300 leading-tight rounded focus:outline-none focus:border-b"
       on:keyup={onKeyup}
-      on:focus|preventDefault={onFocus}
-      on:blur|stopPropagation|preventDefault={onBlur}
+      on:focus={onFocus}
+      on:blur={onBlur}
     />
-    <button type="submit" class="absolute right-0 py-2 px-4 rounded-r-full">
-      🔍
+    <button type="submit" class="absolute right-0 py-2 px-4">
+      <SearchIcon class="h-5 w-5" />
     </button>
   </div>
   {#if suggestionsShown}
-  <SearchSuggestions suggestions={suggestions} />
+  <SearchSuggestions suggestions={suggestions} on:selected={onSelected} />
   {/if}
 </form>
 
 <script>
+import SearchIcon from 'svelte-zondicons/src/icons/Search.svelte';
+
 import SearchSuggestions from './SearchSuggestions.svelte';
 
 let form;
@@ -40,6 +42,7 @@ $: fetchSuggestions(query)
 
 const fetchSuggestions = async (query) => {
   if (!query) {
+    suggestions = [];
     return;
   }
   try {
@@ -61,4 +64,6 @@ const onKeyup = ({ target: { value }}) => {
 }
 
 const onSubmit = () => fetchSuggestions(query);
+
+const onSelected = () => query = '';
 </script>

@@ -4684,6 +4684,11 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
+svelte-zondicons@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/svelte-zondicons/-/svelte-zondicons-1.0.1.tgz#0ed7a0265d051e5bed37123d36df9e7fa1897882"
+  integrity sha512-X8fWGrMd5KwDWny4Jjkh0iSbbEGAPATe/6pMFnt0aili6NEdqcLKAwRDedZ3n8FjJxOQvD8Lvemrw1W3lEEPBQ==
+
 svelte@^3.0.0:
   version "3.16.6"
   resolved "https://registry.npmjs.org/svelte/-/svelte-3.16.6.tgz#0caaec6515fe498bc5fe464cfccf8ce6a88be6c9"
