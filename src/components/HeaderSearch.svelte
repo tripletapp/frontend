@@ -23,12 +23,12 @@
     </button>
   </div>
   {#if suggestionsShown}
-  <NavbarSearchSuggestions suggestions={suggestions} />
+  <SearchSuggestions suggestions={suggestions} />
   {/if}
 </form>
 
 <script>
-import NavbarSearchSuggestions from './NavbarSearchSuggestions.svelte';
+import SearchSuggestions from './SearchSuggestions.svelte';
 
 let form;
 let query = '';

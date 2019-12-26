@@ -12,13 +12,13 @@
           Descriptors
         </a>
       </nav>
-      <NavbarSearch />
+      <HeaderSearch />
     </div>
   </div>
 </header>
 
 <script>
-import NavbarSearch from './NavbarSearch.svelte';
+import HeaderSearch from './HeaderSearch.svelte';
 
 export let segment;
 </script>
