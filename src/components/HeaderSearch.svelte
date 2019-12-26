@@ -35,9 +35,10 @@ import SearchSuggestions from './SearchSuggestions.svelte';
 let form;
 let query = '';
 let suggestions = [];
+let fetching = false;
 let focused = false;
 
-$: suggestionsShown = query && focused
+$: suggestionsShown = query && focused && !fetching
 $: fetchSuggestions(query)
 
 const fetchSuggestions = async (query) => {
@@ -45,11 +46,13 @@ const fetchSuggestions = async (query) => {
     suggestions = [];
     return;
   }
+  fetching = true;
   try {
     const response = await fetch(`/suggestions.json?query=${query}&limit=5`);
     suggestions = await response.json();
+    fetching = false
   } catch(err) {
-    //
+    fetching = false
   }
 }
 

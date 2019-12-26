@@ -15,7 +15,7 @@ export const get = (req, res) => {
     .slice(0, limit)
   const releases = allReleases
     .filter(({ artist, title, year }) => anyIncludes([artist, title, year], query))
-    .map(({ id, slug, title, artist }) => ({ id, slug, name: `${artist} - ${title}` }))
+    .map(({ id, slug, title, artist, image }) => ({ id, slug, image, name: title, secondaryName: artist }))
     .slice(0, limit)
   if (descriptors.length > 0) {
     data.push({ name: 'Descriptors', items: descriptors })
