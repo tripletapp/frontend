@@ -10,8 +10,10 @@
       rel="prefetch"
       href="/{group.name.toLowerCase()}/{item.slug}"
       class="flex align-center hover:bg-gray-800 transition-bg transition-100 transition-ease-in-out"
+      class:search-suggestions-descriptor={group.name === 'Descriptors'}
       class:px-3={!item.image}
       class:py-2={!item.image}
+      on:click={onClick}
     >
       {#if item.image}
       <div class="mr-2 flex-shrink-0">
@@ -41,3 +43,12 @@ export let suggestions;
 const dispatch = createEventDispatcher();
 const onClick = () => dispatch('selected');
 </script>
+
+<style>
+.search-suggestions-descriptor::before {
+  content: '|';
+  font-size: 1.5rem;
+  margin-right: .25rem;
+  line-height: 0.75;
+}
+</style>

@@ -1,9 +1,9 @@
 <svelte:window on:scroll={onScroll} />
 
 <header
-  class="fixed top-0 left-0 w-full z-50 transition-bg transition-ease-in-out"
+  class="fixed top-0 left-0 w-full z-50 transition-bg transition-ease-in-out main-header"
   class:hover:bg-gray-900-transparent={!scrolled}
-  class:bg-gray-900={scrolled}
+  class:bg-gray-900-transparent={scrolled}
 >
   <div class="container">
     <div class="flex justify-between -mx-4 items-center">

@@ -1070,7 +1070,7 @@ video {
 }
 
 .bg-gray-900-transparent {
-  background-color: #1a202caa;
+  background-color: #1a202cdd;
 }
 
 .hover\:bg-transparent:hover {
@@ -1446,7 +1446,7 @@ video {
 }
 
 .hover\:bg-gray-900-transparent:hover {
-  background-color: #1a202caa;
+  background-color: #1a202cdd;
 }
 
 .focus\:bg-transparent:focus {
@@ -1822,7 +1822,7 @@ video {
 }
 
 .focus\:bg-gray-900-transparent:focus {
-  background-color: #1a202caa;
+  background-color: #1a202cdd;
 }
 
 .bg-bottom {
@@ -12050,7 +12050,7 @@ body {
   }
 
   .sm\:bg-gray-900-transparent {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -12426,7 +12426,7 @@ body {
   }
 
   .sm\:hover\:bg-gray-900-transparent:hover {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -12802,7 +12802,7 @@ body {
   }
 
   .sm\:focus\:bg-gray-900-transparent:focus {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .sm\:bg-bottom {
@@ -23027,7 +23027,7 @@ body {
   }
 
   .md\:bg-gray-900-transparent {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -23403,7 +23403,7 @@ body {
   }
 
   .md\:hover\:bg-gray-900-transparent:hover {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -23779,7 +23779,7 @@ body {
   }
 
   .md\:focus\:bg-gray-900-transparent:focus {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .md\:bg-bottom {
@@ -34004,7 +34004,7 @@ body {
   }
 
   .lg\:bg-gray-900-transparent {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -34380,7 +34380,7 @@ body {
   }
 
   .lg\:hover\:bg-gray-900-transparent:hover {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -34756,7 +34756,7 @@ body {
   }
 
   .lg\:focus\:bg-gray-900-transparent:focus {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .lg\:bg-bottom {
@@ -44981,7 +44981,7 @@ body {
   }
 
   .xl\:bg-gray-900-transparent {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -45357,7 +45357,7 @@ body {
   }
 
   .xl\:hover\:bg-gray-900-transparent:hover {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -45733,7 +45733,7 @@ body {
   }
 
   .xl\:focus\:bg-gray-900-transparent:focus {
-    background-color: #1a202caa;
+    background-color: #1a202cdd;
   }
 
   .xl\:bg-bottom {
